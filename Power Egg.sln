@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{923053CC-39BF-DC99-D027-37348CD3BF6B}") = "Power Egg", "Assembly-CSharp.csproj", "{8E74FAC2-777E-A1FD-B9B1-12ADB71D5FF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E74FAC2-777E-A1FD-B9B1-12ADB71D5FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E74FAC2-777E-A1FD-B9B1-12ADB71D5FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E74FAC2-777E-A1FD-B9B1-12ADB71D5FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E74FAC2-777E-A1FD-B9B1-12ADB71D5FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
