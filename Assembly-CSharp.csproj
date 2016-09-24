@@ -45,15 +45,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\EggSelectLevel\EggSelectLevel.cs" />
+     <Compile Include="Assets\Script\EggSelectLevel\LevelManagement.cs" />
      <Compile Include="Assets\Script\EnumClass.cs" />
+     <Compile Include="Assets\Script\WinCOndition.cs" />
+     <Compile Include="Assets\Script\item\Bamboo.cs" />
      <Compile Include="Assets\Script\item\SatuanBerat.cs" />
      <Compile Include="Assets\Script\item\Telur.cs" />
      <Compile Include="Assets\Script\item\Timbangan.cs" />
      <Compile Include="Assets\Script\item\kotak.cs" />
      <Compile Include="Assets\Script\item\penunjukarah.cs" />
      <Compile Include="Assets\Script\manager\AngkaManager.cs" />
+     <Compile Include="Assets\Script\manager\BlankScreenManager.cs" />
      <Compile Include="Assets\Script\manager\HandleInput.cs" />
+     <Compile Include="Assets\Script\manager\PauseButton.cs" />
      <Compile Include="Assets\Script\manager\PowerEggManager.cs" />
+     <Compile Include="Assets\Script\manager\ShowManager.cs" />
      <Compile Include="Assets\Script\manager\screen.cs" />
      <None Include="Assets\font\green-eggs-and-spam\readme.txt" />
  <Reference Include="UnityEngine.UI">
