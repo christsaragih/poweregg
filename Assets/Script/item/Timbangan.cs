@@ -11,7 +11,7 @@ public class Timbangan : MonoBehaviour {
     public static Timbangan Instance { get { return myInstance; } }
 	// Use this for initialization
 	void Start () {
-       
+       MaxTimbangan= PowerEggManager.Instance.MaxLength;
         myInstance = this;
 	}
 	public void adaTambahan(float tambahan) {
@@ -25,14 +25,16 @@ public class Timbangan : MonoBehaviour {
 		case Berat.mg:tambahan=tambahan*1000000; break;
 		case Berat.pon:tambahan=tambahan*5; break;
 		}
-		
 		tambah(tambahan);
+
 		 
 	}
     public void tambah(float tambahan) {
       
         berat += tambahan;
-        
+        if (berat == (int)PowerEggManager.Instance.Tujuan) {
+            PowerEggManager.Instance.Win(); ;
+        }
     }
     public void SetMaxTimbangan(float Max,Berat satuanBerat) {
         MaxTimbangan = Max;

@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Telur : MonoBehaviour {
     public float berat;// Untuk menyimpan nilai berat telur
+    public TextMesh myTetx;
 	// Use this for initialization
 	void Start () {
-	
+        myTetx.text = berat + "";
 	}
 	
 	// Update is called once per frame
