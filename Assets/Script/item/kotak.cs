@@ -9,7 +9,7 @@ public class kotak : MonoBehaviour {
 	void Start () {
         myInstance = this;
         anim = this.GetComponent<Animator>();
-
+ 
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class kotak : MonoBehaviour {
     public void Touch() {
         if (anim != null)
         {
-
+            MusicManager.Instance.SFX_kotakPecah();
             anim.SetInteger("kotakPos", 1);
         }
     }

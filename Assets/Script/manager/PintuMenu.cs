@@ -6,8 +6,8 @@ public class PintuMenu : MonoBehaviour {
  public   int count=10;
 	// Use this for initialization
 	void Start () {
-	
-	}
+        MusicManager.Instance.BG_Menu();
+    }
 	
 	// Update is called once per frame
 	void Update () {

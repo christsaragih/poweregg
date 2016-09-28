@@ -38,13 +38,16 @@ public class HandleInput : MonoBehaviour
                 PowerEggManager.Instance.ClickObject();
                 break;
             case "pause":
+                MusicManager.Instance.SFX_ClickButton();
                 PowerEggManager.Instance.Pausing();
                 break;
             case "Level":
+                MusicManager.Instance.SFX_ClickButton();
                 StaticScene.SetLoadPindahScene("Level "+this.gameObject.name, 4);
                 Application.LoadLevel("Loading");
                 break;
             case "home":
+                MusicManager.Instance.SFX_ClickButton();
                 Time.timeScale = 1;
                 StaticScene.SetLoadPindahScene("Menu", 1);
                 Application.LoadLevel("Loading");
@@ -52,11 +55,17 @@ public class HandleInput : MonoBehaviour
         }
         switch (this.gameObject.name)//case name
         {
+            case "sound":
+                MusicManager.Instance.SFX_ClickButton();
+                this.GetComponent<ButtonSound>().SetSprite();//Method untuk menjalankan fungsi srt sound dan mengganti sprite
+                break;
             case "reload":
+                MusicManager.Instance.SFX_ClickButton();
                 StaticScene.SetLoadPindahScene("Level " + PowerEggManager.Instance.level, 1);
                 Application.LoadLevel("Loading");
                 break;
             case "button-play":
+                MusicManager.Instance.SFX_ClickButton();
                 GameObject.Find("button-play").GetComponent<PintuMenu>().OpenDoor();
                 break;
         }

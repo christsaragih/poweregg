@@ -15,6 +15,7 @@ public class PowerEggManager : MonoBehaviour {
     public static PowerEggManager Instance { get { return myInstance; } }
 	// Use this for initialization
 	void Start () {
+        MusicManager.Instance.BG_GamePlay();
         myInstance = this;
         isPause = false;
         isWin = false;

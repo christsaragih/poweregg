@@ -5,11 +5,7 @@ public class AngkaManager : MonoBehaviour {
     public GameObject[] angka;
     float nilai = 0;
     // Use this for initialization
-    void Start () {
-     
-       
-	}
-	
+ 
 	// Update is called once per frame
 	void Update () {
         if (nilai < 11)

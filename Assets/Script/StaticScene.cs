@@ -7,6 +7,7 @@ using System.Collections;
 public static class  StaticScene {
     private static string NamaTujuanScene;
     private static float Waktu;
+    private static bool sound=true;
 
     public static void SetLoadPindahScene(string namaTujuan, float waktu) {
         NamaTujuanScene = namaTujuan;
@@ -20,6 +21,11 @@ public static class  StaticScene {
         return (int) Waktu;
     }
 
-
+    public static bool usingSound() {
+        return sound;
+    }
+    public static void setSound(bool setSound) {
+        sound = setSound;
+    }
 
 }

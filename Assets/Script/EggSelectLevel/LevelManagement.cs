@@ -8,6 +8,7 @@ public class LevelManagement : MonoBehaviour {
     public static LevelManagement Instance { get { return mystat; } }
 	// Use this for initialization
 	void Start () {
+        MusicManager.Instance.BG_Menu();
         mystat = this;
         switch (PlayerPrefs.GetInt(level)) {
             case 0:
