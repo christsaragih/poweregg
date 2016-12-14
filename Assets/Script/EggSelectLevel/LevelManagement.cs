@@ -10,8 +10,12 @@ public class LevelManagement : MonoBehaviour {
 	void Start () {
         MusicManager.Instance.BG_Menu();
         mystat = this;
-        switch (PlayerPrefs.GetInt(level)) {
+        Debug.Log(PlayerPrefs.GetInt("Level " + level));
+        switch (PlayerPrefs.GetInt("Level " + level))
+        {
+
             case 0:
+
                 star[0].gameObject.active = false;
                 star[1].gameObject.active = false;
                 star[2].gameObject.active = false;
@@ -22,10 +26,14 @@ public class LevelManagement : MonoBehaviour {
                 break;
             case 2:
                 star[0].gameObject.active = false;
-           
+
                 break;
         }
-	}
+
+    }
+    void Update() {
+       
+    }
 
     public void Click(string numberLevel) {
         Application.LoadLevel("Level "+numberLevel);

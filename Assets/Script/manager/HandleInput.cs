@@ -55,6 +55,10 @@ public class HandleInput : MonoBehaviour
         }
         switch (this.gameObject.name)//case name
         {
+            case "Next":
+                StaticScene.SetLoadPindahScene("Level " + (PowerEggManager.Instance.level+1), 4);
+                Application.LoadLevel("Loading");
+                break;
             case "sound":
                 MusicManager.Instance.SFX_ClickButton();
                 this.GetComponent<ButtonSound>().SetSprite();//Method untuk menjalankan fungsi srt sound dan mengganti sprite

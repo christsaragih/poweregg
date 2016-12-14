@@ -68,7 +68,7 @@ public class MusicManager : MonoBehaviour {
     }
     public void BG_Menu()
     {
-        if (StaticScene.usingSound())
+        if (StaticScene.usingSound()&&bgSoundMenu)
         {
             AudioSource.PlayClipAtPoint(bgSoundMenu, transform.position);
         }
